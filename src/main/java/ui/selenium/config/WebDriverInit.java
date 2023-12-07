@@ -1,4 +1,4 @@
-package config;
+package ui.selenium.config;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,6 +19,8 @@ public class WebDriverInit {
         return driver;
     }
     public static void closeDriver(){
-        driver.quit();
+
+       driver.quit();
+       driver = null;
     }
 }
